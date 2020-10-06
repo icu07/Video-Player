@@ -1,7 +1,7 @@
 <?php
 $current_video = $_GET["q"];
 $n = false;
-foreach (glob("*".$current_video."*") as $filename) {
+foreach (glob("../video/*".$current_video."*") as $filename) {
 	$n = true;
 	$current_video_file = $filename;
 }
