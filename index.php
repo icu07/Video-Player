@@ -39,6 +39,7 @@ body {
 	background-size: cover;
 	color: white;
 	background-color: black;
+	margin: 0px;
 }
 #controles{
 	margin-top: 5px;
@@ -63,7 +64,7 @@ if($n == true){
 <div>
 	<h2><?php echo $current_video_file; ?></h2>
 </div>
-<video height="100%" controls autoplay>
+<video width="80%" controls autoplay>
   	<source src="<?php echo $current_video_file; ?>" type="video/mp4">
   	<source src="mov_bbb.ogg" type="video/ogg">
   	Your browser does not support HTML video.
