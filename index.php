@@ -20,8 +20,8 @@ foreach (glob($video_directory."*".$current_video."*") as $filename) {
 if($n == true){
 ?>
 
-<div>
-	<h2>
+<div id="video_title">
+	
 	<?php 
 		$main_title = str_replace($video_directory, "", $current_video_file);
 		$main_title = str_replace(".mkv", "", $main_title);
@@ -30,7 +30,7 @@ if($n == true){
 	?>
 	</h2>
 </div>
-<video width="80%" controls autoplay>
+<video width="65%" controls autoplay>
   	<source src="<?php echo $current_video_file; ?>" type="video/mp4">
   	<source src="mov_bbb.ogg" type="video/ogg">
   	Your browser does not support HTML video.
